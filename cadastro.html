@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="icon" type="image/png" href="images/logoPadaria.svg">
+       
+        <link rel="stylesheet" href="cadastro.css">
+        <title>Document</title>
+    </head>
+
+
+    <body>
+
+            
+        <header class="cabecalho3">
+            <img src="images/logoPadaria.svg" alt="Logo Padaria Bom Sabor" class="logo" />
+            <nav class="menuNavegacao3">
+                <a href="index.html"><i>PÁGINA INICIAL</i></a>
+                <a href="contato.html"><i>CONTATO</i></a>
+                <a href="feedback.html"><i>FEEDBACK</i></a>
+                <a href="pedido.html"><i>PEDIDO</i></a>
+            </nav>
+        </header>
+
+        <fieldset>
+            <h2><i>Faça seu cadastro</i></h2>
+        </fieldset>
+        <br>
+
+        <fieldset>
+            
+            <form>
+                <fieldset>
+                    <legend><strong><i>Dados Pessoais</i></strong></legend>
+                    <label for="nome"><strong><i>Nome:</label><br>
+                    <input type="text" name="nome" id="nome" placeholder="Deixe seu nome aqui..." required>
+                    <br><br>
+                    <label for="email">E-mail: </label><br>
+                    <input type="email" name="email" id="email" placeholder="Deixe seu e-mail de contato...">
+                    <section class="grupo-flex">
+                        <section class="campo">
+                            <label for="numero">Tel:</label>
+                            <input type="tel" name="telefone" id="numero" minlength="10" maxlength="11" placeholder="Deixe seu telefone...">
+                        </section>
+
+                        <section class="campo">
+                            <label for="dataNasc" id="dataNascWord">Data de Nascimeto:</label>
+                            <input type="date" name="Data-Nascimento" id="dataNasc">
+                        </section>
+                    </section>
+
+                </fieldset>          
+            
+                <fieldset>
+                    <label for="endereco"><strong><i>Endereço:</label>
+                    <input type="text" name="endereco" id="endereco" placeholder="Rua, Avenida, Travessa..." required><br>
+                     Bairro: <input type="text" placeholder="Bairro"></i></strong>
+                </fieldset>
+                
+                <fieldset>
+                    <legend><i><strong>Produtos favoritos</strong></i></legend>
+
+                    <label>
+                        Salgados<br>
+                        <input type="checkbox" name="salgados" id="produto1"><br>
+                        
+                    </label>
+                    <label>
+                        Doces<br>
+                        <input type="checkbox" name="doces" id="produto2">  
+                    </label>
+                    <br>
+                    <label>
+                        Bebidas<br>
+                        <input type="checkbox" name="bebidas" id="produto3">
+                    </label>
+                </fieldset>
+
+                <fieldset id="checkTermo">
+
+                    <legend><i><strong>Termos</strong></i></legend>
+
+                    <div class="grupo-flex">
+                        <div class="item-termo">
+                            <input type="checkbox" id="accept">
+                            <label for="accept" id="accept11">Aceita receber nossas ofertas por e-mail/Whatsapp</label>
+                        </div>
+
+                        <div class="item-termo">
+                            <input type="checkbox" id="accept1">
+                            <label for="accept1" id="accept22">Aceita nossos termos de uso</label>
+                        </div>
+                    </div>
+
+                </fieldset>
+
+
+                
+
+            </form>
+
+            <button id="btnCadastroEnvio">Enviar Cadastro</button>
+        </fieldset>
+
+        <script src="cadastro.js"></script>
+    </body>
+</html>

@@ -1,0 +1,540 @@
+body {
+  background: linear-gradient(180deg, #F0E68C 0%, #8B5E00 100%);
+  min-height: 100vh;
+  margin: 0;
+  color: #3f3c1d; 
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  position: relative;
+  text-align: center;
+}
+
+.cabecalho {
+    position: fixed;
+    display: flex;
+    justify-content: space-between; 
+    align-items: center;            
+    width: 96%;
+    top: 10px;
+    left: 2%;
+    background-color: #f8f8ff;      
+    border-top: 1px solid #786600;
+    border-bottom: 2px solid #786600;
+    border-radius: 10px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    z-index: 100;
+    padding: 15px 30px; 
+    box-shadow: 0 3px 8px rgba(0,0,0,0.1); 
+}
+.logo {
+    left: 10px;
+}
+
+.menuNavegacao a {
+    text-decoration: none;
+    color: #4b3b0a; 
+    font-weight: bold;
+    margin: 0 15px;
+    font-size: 18px;
+}
+
+.menuNavegacao a:hover {
+    color: #8b4513; 
+    text-decoration: none;
+}
+
+
+.sobrePadaria {
+    background-color: #fffaf0;
+    padding: 30px;
+    position: relative;
+    margin: 30px auto;
+    top: 90px;
+    max-width: 1000px;
+    border-radius: 10px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    box-shadow: 2px 2px 10px rgba(0,0,0,0.05);
+    color: #4b3b0a;
+}
+
+.tituloPrincipal {
+    text-align: center;
+    color: #8b4513;
+    font-size: 36px;
+    margin-bottom: 25px;
+}
+
+.subtitulo {
+    font-size: 24px;
+    margin-top: 20px;
+    color: #a0522d;
+}
+
+.descricao {
+    font-size: 18px;
+    line-height: 1.6;
+    margin-top: 10px;
+    color: #333;
+}
+
+.marcasParceiras {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    align-content: space-between;
+    padding: 15px;
+    background-color: #f9f9f9;
+}
+
+.marcasParceirasFilho {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    align-content: space-between;
+    padding: 15px;
+    background-color: #f9f9f9;
+}
+
+.marcasParceiras img {
+    border: 2px solid #c7a900;
+    border-radius: 8px;
+    background-color: white;
+    padding: 5px;
+    width: 120px;
+}
+
+.catupiry {
+
+    border-radius: 50%;  
+    padding: 5px;       
+    border: 2px solid #c7a900; 
+    width: 30px;
+
+}
+
+
+.cardapio-container {
+  width: 100%;
+  border-collapse: separate;
+  border-spacing: 0 8px; 
+  background-color: #c7a900;
+}
+
+.cardapio-card {
+  border: 2px solid #c7a900;
+  border-radius: 8px;
+  background-color: #fff8dc;
+}
+
+.listaPadaria {
+    background-color: #fff8dc;
+    border: 2px solid #a59c4f;
+    border-radius: 8px;
+    position: relative;
+    padding: 20px;
+    width: 90%;
+    max-width: 700px;
+    top: 100px;
+    left: 650px;
+    box-shadow: 2px 2px 8px rgba(0,0,0,0.1);
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.listaPadaria h3 {
+  color: #a0522d;
+  font-size: 22px;
+  margin-bottom: 15px;
+  text-align: center;
+}
+
+.listaPadaria .padariaNome {
+  font-weight: bold;
+  color: #8b4513;
+}
+
+.listaPadaria ul {
+  list-style: none; 
+  padding-left: 0;
+}
+
+.listaPadaria li {
+  margin-bottom: 10px;
+  font-size: 18px;
+  line-height: 1.5;
+  color: #333;
+}
+
+.galeriaProduto {
+    position: relative; 
+    left: -300px;        
+    top: 20px;          
+}
+
+.galeria-de-produtos {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  justify-items: center; 
+  text-align: center;
+}
+
+.galeria-de-produtos-filho {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); 
+    grid-template-rows: repeat(3, 1fr);  
+    gap: 50px; 
+    justify-content: start;
+    width: 900px;
+    padding: 20px;
+}
+
+.galeria-de-produtos-filho img {
+    height: 100%;
+    max-height: 250px;
+    width: 100%; 
+    max-width: 250px;
+    border: 7px solid #c7a900;
+    border-radius: 50px;
+}
+
+.galeria-de-produtos-filho img:hover {
+    transform: scale(1.1);
+    transition: transform 0.3s ease;
+    filter: grayscale(50%) brightness(90%);
+    transition: filter 0.3s ease;
+    cursor: pointer;
+}
+
+
+
+
+#receitaCaixaPai1 {
+    background-color: #a59c4f;
+    position: absolute;
+    width: 350px;
+    height: 200px;
+    left: 70%; 
+    top: 45%; 
+    border: 2px solid #c7a900;
+    border-radius: 5px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    text-align: left;
+}
+
+#receitaCaixaFilho1 {
+    background-color: #686230;
+    color: white;
+    border-collapse: collapse;
+    position: absolute;
+    margin: 10px;
+    top: 5px;
+    border: 2px solid #c7a900;
+    border-radius: 5px;
+    padding: 5px;
+    bottom: auto;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.imagemFesta {
+    width: 100px;
+    height: 80px;
+    position: absolute;
+    right: 0px;
+    top: 5px;
+    border-radius: 30px;
+    border: 3px solid #3f3c1d;
+}
+
+#receitaCaixaPai1:hover {
+    transform: scale(1.1);
+    transition: transform 0.3s ease;
+    filter: grayscale(50%) brightness(90%);
+    transition: filter 0.3s ease;
+    cursor: pointer;
+}
+
+
+#receitaCaixaPai2 {
+    background-color: #a59c4f;
+    position: absolute;
+    width: 350px;
+    height: 160px;
+    left:70%; 
+    top: 1425px;
+    border: 2px solid #c7a900;
+    border-radius: 5px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+#receitaCaixaFilho2 {
+    background-color: #686230;
+    color: white;
+    position: relative;
+    margin: 10px;
+    align-items: center;
+    top: 0px;
+    border: 2px solid #c7a900; 
+    border-radius: 5px;
+    bottom: auto;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    padding: 10px; 
+}
+
+
+#receitaCaixaPai3 {
+    background-color: #a59c4f;
+    position: absolute;
+    width: 350px;
+    height: 200px;
+    left: 70%;
+    top: 1930px;
+    border: 2px solid #c7a900;
+    border-radius: 5px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.imagemFidelidade {
+    border: 2px solid #c7a900;
+    width: 310px;
+    height: 155px;
+}
+
+#receitaCaixaFilho3 {
+    background-color: #686230;
+    color: white;
+    border-collapse: collapse;
+    position: absolute;
+    margin: 10px;
+    top: 5px;
+    border: 2px solid #c7a900;
+    border-radius: 5px;
+    padding: 5px;
+    bottom: auto;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+#receitaCaixaPai3:hover {
+    transform: scale(1.1);
+    transition: transform 0.3s ease;
+    filter: grayscale(50%) brightness(90%);
+    transition: filter 0.3s ease;
+    cursor: pointer;
+}
+
+
+.depoimentos {
+  background-color: #a59c4f;
+  padding: 20px;
+  border-radius: 15px;
+  width: 100%;        
+  max-width: 900px;    
+  margin: 0 auto;      
+  text-align: center; 
+  border: 2px #c7a900 solid;
+}
+
+.cardPai {
+    display: flex;
+    gap: 10px;
+    justify-content: center;
+    flex-wrap: wrap;
+    
+}
+
+.cardFilho {
+    background-color: rgb(200, 199, 199);
+    padding: 10px;
+    border-radius: 10px;
+    border: 2px solid #686230;
+    text-align: center;
+    width: 180px;
+}
+
+.cardFilho:hover {
+    background-color: gray;
+    transform: scale(1.1);
+    cursor: pointer;
+}
+
+.star {
+    color: #786600;
+    font-size: 18px;
+}
+
+
+
+
+.cardapio-container {
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    gap: 15px; 
+    padding: 20px;
+    background-color: #f5f5f5;
+    font-family: Arial, sans-serif;
+    margin: 10px;
+    border: 5px solid #b9af57;
+    border-radius: 10px;
+
+    bottom: 15px;
+}
+
+
+.cardapio-card {
+    display: flex;
+    justify-content: space-between;
+    background-color: #a59c4f; 
+    border-left: 5px solid #786600;
+    padding: 15px;
+    border-radius: 8px;
+    flex-wrap: wrap; 
+}
+
+
+.cardapio-item {
+    flex: 1 1 20%;
+    text-align: center;
+    padding: 5px;
+    min-width: 120px;
+    color: #333;
+    font-weight: 500;
+}
+
+
+.cardapio-card .cardapio-item:first-child {
+    font-weight: bold;
+    color: #3f3c1d;
+}
+
+.imageWhats {
+    width: 50px;
+    height: 50px;
+    position: fixed;
+    bottom: 20px; 
+    right: 20px; 
+}
+
+.imageWhats:hover {
+        transform: scale(1.1)
+}
+
+#btnVolta {
+    background-color: #b9af57;
+    border: 1px groove #c7a900;
+    border-radius: 3px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-weight: bold;
+    color: #4b3b0a;
+    cursor: pointer;
+    position: relative;
+    left: 0px;
+    bottom: -80px;
+}
+
+#btnVolta:hover {
+    background-color: #686230;
+    transform: scale(1.1);
+}
+ .video {
+    position: relative;
+    left: 0px;
+    bottom: -30px;
+ }
+
+ footer {
+    color: white;
+ }
+
+ address {
+    color: white;
+ }
+
+
+ 
+@media(max-width: 768px) {
+    .body {
+        margin: 0 auto;
+    }
+
+    .cabecalho {
+        width: 69%;
+        max-width: 800px;
+        margin: 0;
+     
+    }
+
+    .sobrePadaria {
+        width: 700px;
+        left: 20px;
+    }
+
+    .listaPadaria {
+        width: 750px;
+        left: 30px;
+        top: 85px;
+    }
+
+    .galeria-de-produtos-filho {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr); /*2 colunas */
+        justify-items: start;
+        gap: 10px;
+
+    }
+
+    .galeria-de-produtos-filho img {
+        width: 150px;
+        height: 150px;
+        display: flex;
+    }
+
+    .cardapio-container {
+        display: grid;
+        grid-template-columns: repeat(5, 2fr); 
+        padding: 0px;
+        gap: 10px;
+        margin: 5px;
+        background-color: #F8F8FF;
+        width: 800px;
+    }
+
+    .cardapio-card {
+        width: 117px;
+        align-content: center;
+        
+    }
+
+    .video {
+        left: 20px;
+    }
+
+    .btnWhats {
+        right: 50%;
+    }
+}
+
+#btnPedidoInicial {
+    background-color: #b9af57;        
+    color: #4b3b0a;                   
+    border: 2px solid #786600;        
+    border-radius: 8px;               
+    text-decoration: none;           
+    display: inline-block;            
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 18px;
+    font-weight: bold;
+    left: 200px;
+    padding: 12px 25px;
+    cursor: pointer;
+    box-shadow: 2px 2px 5px rgba(0,0,0,0.2);
+    margin: 40px auto;                
+    transition: all 0.3s ease-in-out;
+    text-align: center;               
+}
+
+#btnPedidoInicial:hover {
+    background-color: #8b5e00;        
+    color: #fff8dc;                   
+    transform: scale(1.1);
+    box-shadow: 3px 3px 10px rgba(0,0,0,0.3);
+}
+ 
+ 

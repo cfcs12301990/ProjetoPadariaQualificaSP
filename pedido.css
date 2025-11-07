@@ -1,0 +1,372 @@
+body {
+    background: linear-gradient(180deg, #F0E68C 0%, #8B5E00 100%);
+    position: absolute;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: #4b3b0a;
+    margin: 0;
+    min-height: 100vh;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    padding: 20px 0;
+}
+
+.cabecalho4 {
+    position: fixed;
+    display: flex;
+    justify-content: space-between; /* separa logo e navegação */
+    align-items: center;            /* alinha verticalmente */
+    width: 98%;
+    top: 5px;
+    left: 20px;
+    background-color: #f8f8ff;      /* cor clara parecida com .cardapio */
+    border-top: 1px solid #786600;
+    border-bottom: 2px solid #786600;
+    border-radius: 10px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    z-index: 100;
+}
+
+.logo {
+    left: 10px;
+}
+
+.menuNavegacao4 a  {
+    text-decoration: none;
+    color: #4b3b0a; /* marrom escuro */
+    font-weight: bold;
+    margin: 0 15px;
+    font-size: 18px;
+}
+
+.menuNavegacao4 a :hover {
+    color: #8b4513; /* tom mais escuro no hover */
+    text-decoration: none;
+}
+
+
+/* Formulário */
+form {
+    background-color: #fffaf0; /* similar ao index */
+    border: 3px solid #c7a900;
+    border-radius: 10px;
+    width: 80%;
+    max-width: 1000px;
+    padding: 30px;
+    box-shadow: 2px 2px 10px rgba(0,0,0,0.1);
+    margin-top: 110px;
+}
+
+/* Títulos do formulário */
+h2 {
+    text-align: center;
+    color: #8b4513;
+    font-size: 28px;
+    margin-bottom: 20px;
+}
+
+/* Seção de dados do usuário */
+#dados {
+    background-color: #fffaf0;
+    border: 2px solid #c7a900;
+    border-radius: 10px;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    width: 100%;
+    max-width: 645px;
+    margin: 100px auto 30px auto;
+    top: 300px;
+}
+
+/* Inputs padrão */
+input, textarea, select {
+    padding: 8px;
+    border: 1px solid #c7a900;
+    border-radius: 5px;
+    font-size: 16px;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+/* Textarea */
+.textbox {
+    height: 80px;
+    resize: none;
+}
+
+/* Inputs numéricos */
+.number {
+    width: 60px;
+    margin-left: 5px;
+}
+
+/* Botões */
+button {
+    background-color: #b9af57;
+    border: 2px solid #c7a900;
+    border-radius: 5px;
+    color: #4b3b0a;
+    font-weight: bold;
+    cursor: pointer;
+    margin-top: 5px;
+    padding: 5px 10px;
+}
+
+button:hover {
+    background-color: #8b4513;
+    color: #fff;
+    transform: scale(1.05);
+}
+
+/* Tabelas de pedido */
+.tabelaPadrao {
+    border: 2px solid #c7a900;
+    border-radius: 10px;
+    margin: 50px auto;
+    width: 100%;
+    max-width: 900px;
+    border-collapse: collapse;
+    font-style: italic;
+}
+
+/* Cabeçalho da tabela */
+.tabelaPadrao th {
+    background-color: #d2b48c; /* bege suave */
+    color: #4b3b0a;
+    padding: 10px;
+    border: 2px solid #c7a900;
+    text-align: center;
+}
+
+/* Células */
+.tabelaPadrao td {
+    padding: 8px;
+    border: 1px solid #c7a900;
+    text-align: center;
+    background-color: #fffaf0;
+}
+
+/* Títulos das seções de produtos dentro do form */
+.tabelaPadrao h2 {
+    text-align: center;
+    color: #8b4513;
+    margin: 15px 0;
+}
+
+/* Labels dentro do form */
+label {
+    font-weight: bold;
+    margin-top: 10px;
+}
+
+/* Data da entrega */
+#data {
+    width: 135px;
+    left: 500px;
+}
+
+/* Centralizar botão de confirmação */
+#botaoPedido {
+    display: block;
+    left: 20px;
+}
+
+.itemCardapio {
+    display: flex;
+    flex-direction: column; /* organiza em coluna */
+    align-items: flex-start; /* alinha conteúdo ao topo e à esquerda */
+    gap: 5px; /* espaço entre elementos */
+    min-height: 150px; /* altura uniforme das células */
+}
+
+/* Inputs numéricos para quantidade dentro das células */
+.number {
+    width: 50px; /* sobrescreve largura anterior para padronizar */
+    margin-left: 5px;
+}
+
+/* Textareas dentro das células de produtos */
+.textbox {
+    width: 100%;
+    height: 60px; /* sobrescreve altura anterior */
+    resize: none;
+}
+
+/* Alinhamento vertical das células para topo */
+.tabelaPadrao td, .tabelaPadrao th {
+    vertical-align: top; /* alinha o conteúdo ao topo */
+    text-align: center;
+    padding: 5px;
+}
+
+#pedidos {
+    margin: 0 0 0 40px;
+
+}    
+
+#pedidosPadaria input[type="number"] {
+    width: 60px;      /* define a largura da caixa */
+    padding: 4px;     /* ajusta o espaçamento interno */
+    font-size: 14px;  /* tamanho da fonte */
+    box-sizing: border-box; /* garante que padding não aumente a largura */
+}
+
+#pedidosPadaria {
+    background-color: #fff8f0; /* cor clara, estilo padaria */
+    padding: 20px;
+    border-radius: 10px;
+    max-width: 600px;
+    margin: 20px auto;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+    font-family: 'Arial', sans-serif;
+}
+
+#pedidosPadaria h2 {
+    text-align: center;
+    color: #8b4513
+}
+
+#pedidosPadaria .item {
+    background-color: #fff3e0;
+    border: 1px solid #f1c40f;
+    padding: 15px;
+    border-radius: 8px;
+    margin-bottom: 15px;
+}
+
+#pedidosPadaria .item p {
+    margin: 0 0 10px 0;
+    font-size: 18px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#pedidosPadaria .preco {
+    font-size: 14px;
+    color: #4b3b0a;
+    font-weight: normal;
+}
+
+#pedidosPadaria input[type="number"] {
+    width: 60px;
+    padding: 4px;
+    font-size: 14px;
+    margin-left: 5px;
+    border-radius: 4px;
+    border: 1px solid #ccc;
+}
+
+#pedidosPadaria button {
+    background-color: #b9af57;
+    color: #4b3b0a;
+    border: none;
+    padding: 6px 12px;
+    margin-left: 10px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 14px;
+    transition: background-color 0.3s;
+}
+
+#pedidosPadaria button:hover {
+    background-color: #d35400;
+}
+
+#pedidosPadaria .resultado {
+    margin-top: 8px;
+    font-weight: bold;
+    color: #4b3b0a;
+;
+}
+
+#btnTop {
+    display: block;             
+    margin: 20px auto;          
+    padding: 10px 20px;
+    font-size: 16px;
+    font-weight: bold;
+    color: #4b3b0a;
+    background-color: #b9af57;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    text-align: center;
+    transition: background-color 0.3s ease;
+}
+
+
+
+#btnTop:hover {
+    background-color: #ff4500;
+}
+
+#observacoesCliente {
+    background-color: #fff8dc;
+    border: 2px solid #a59c4f;
+    border-radius: 8px;
+    padding: 15px;
+    margin: 20px auto;
+    width: 90%;
+    max-width: 600px;
+    color: #4b3b0a;
+    text-align: left;
+}
+
+#textoObservacoes {
+    width: 100%;
+    border: 2px solid #c7a900;
+    border-radius: 5px;
+    padding: 10px;
+    font-size: 16px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    resize: none;
+}
+
+#secaoDistancia {
+    background-color: #fff8dc;
+    border: 2px solid #c7a900;
+    border-radius: 8px;
+    padding: 15px;
+    margin: 20px auto;
+    width: 90%;
+    max-width: 500px;
+    text-align: center;
+    color: #4b3b0a;
+}
+
+#secaoDistancia label {
+    display: block;
+    font-weight: bold;
+    margin-bottom: 8px;
+    font-size: 16px;
+}
+
+#distanciaInput {
+    width: 120px;
+    padding: 8px;
+    border: 2px solid #c7a900;
+    border-radius: 5px;
+    font-size: 16px;
+    margin-right: 10px;
+    text-align: center;
+}
+
+#btnDistancia {
+    padding: 10px 18px;
+    font-size: 16px;
+    font-weight: bold;
+    color: #fff;
+    background-color: #4682b4; 
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+#btnDistancia:hover {
+    background-color: #315f86;
+    transform: scale(1.05);
+}

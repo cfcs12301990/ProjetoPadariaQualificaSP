@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="icon" type="image/png" href="images/logoPadaria.svg">
+        <link rel="stylesheet" href="pedido.css">
+        <link rel="stylesheet" href="index.html">
+        <title>Pedido</title>
+    </head>
+
+
+    <body>
+        
+        <header class="cabecalho4">
+            <img src="images/logoPadaria.svg" alt="Logo Padaria Bom Sabor" class="logo" />
+            <nav class="menuNavegacao4">
+                <a href="index.html"><i>PÁGINA INICIAL</i></a>
+                <a href="cadastro.html"><i>CADASTRO</i></a>
+                <a href="feedback.html"><i>FEEDBACK</i></a>
+                <a href="contato.html"><i>CONTATO</i></a>
+            </nav>
+        </header>
+
+            
+        <div>
+            
+
+            <section id="dados">
+                <legend><h2>Faça seu pedido</h2></legend>
+                <label for="nome">Nome:</label>
+                <input type="text" id="nome" placeholder="Deixe seu nome aqui..." >
+
+                <label for="email">E-mail: </label>
+                <input type="email" id="email" placeholder="Deixe seu e-mail de contato...">
+
+                <label for="telefone">Telefone:    </label>
+                <input type="tel" id="telefone" minlength="10" maxlength="11" placeholder="ex: (11)99999-9999">
+    
+                <label for="endereco">Endereço:</label>
+                <input type="text" id="endereco" placeholder="Ex: Rua, número, complemento">
+            </section>
+        
+
+                
+            
+            <form id="pedidos">
+                
+                <table class="tabelaPadrao">
+                    <legend><h2>Cardápio</h2></legend>
+                    <tr>
+                        <td>Pão Francês</td>
+                        <td>R$1,00</td>
+                    
+                        <td>
+                            <input type="number" min="0" value="0" class="quantidade" 
+                            data-produto="Pão Francês" data-preco="1.00">
+                        </td>
+                    
+                        <td>
+                            <button class="comprar" type="button" 
+                            data-produto="Pão Francês" data-preco="1.00">Comprar</button>
+                        </td>
+                        <td>
+                            <button type="button" class="saiba-mais" 
+                            onclick="alert('Pão francês fresquinho e saboroso')">Saiba mais</button>
+                        </td>
+                    </tr>
+
+                    <tr>
+                        <td>Pão de banha/ Hot-Dog</td>
+                        <td>R$1,00</td>
+                        <td>
+                            <input type="number" min="0" value="0" class="quantidade" 
+                                data-produto="Pão de banha/ Hot-Dog" data-preco="1.00">
+                        </td>
+                        <td>
+                            <button class="comprar" type="button" 
+                                    data-produto="Pão de banha/ Hot-Dog" data-preco="1.00">Comprar</button>
+                        </td>
+                        <td>
+                            <button type="button" class="saiba-mais" 
+                                    onclick="alert('Pão ideal para lanches e cachorros quentes')">Saiba mais</button>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Bolo</td>
+                        <td>R$20,00</td>
+                        <td><input type="number" min="0" value="0" class="quantidade" data-produto="Pão Francês" data-preco="1.00"></td>
+                        <td><button class="comprar" type="button" data-produto="bolo" data-preco="20,00">Comprar</button></td>
+                        <td><button type="button" class="saiba-mais" onclick="alert('Bolos deliciosos e artesanais')">Saiba mais</button></td>
+                    </tr>
+                    <tr>
+                        <td>Tortas</td>
+                        <td>R$25,00</td>
+                        <td><input type="number" min="0" value="0" class="quantidade" data-produto="Pão Francês" data-preco="1.00"></td>
+                        <td><button class="comprar" type="button" data-produto="bolo" data-preco="25,00">Comprar</button></td>
+                        <td><button type="button" class="saiba-mais" onclick="alert('Tortas frescas excelente para presentear alguém ou se presentear')">Saiba mais</button></td>
+                    </tr>
+
+                </table>
+
+                <section id="observacoesCliente">
+                    <h2>Observações</h2>
+                    <textarea id="textoObservacoes" placeholder="Digite aqui suas observações sobre o pedido..." rows="4" cols="50"></textarea>
+                </section>
+
+                <section id="carrinho">
+                    <h2>Seu Carrinho</h2>
+                    <ul id="listaCarrinho"></ul>
+                    <p><strong>Total: </strong>R$ <span id="totalCarrinho">0.00</span></p>
+                </section>
+
+                <section id="secaoDistancia">
+                    <label for="distanciaInput"><strong>Distância até sua casa (km):</strong></label>
+                    <input type="number" id="distancia" min="0" step="0.1" placeholder="Ex: 3.5">
+                    <button id="btnDistancia" type="button">Calcular Distância</button>
+                </section>
+
+                <div class="dataEntrega">
+                    <label><strong>Data da Entrega</strong></label>
+                    <input type="date" id="data" name="data_entrega">
+                </div>
+
+                <button id="limparPedido" type="button">Limpar Cardápio</button>
+            
+
+                <button type="submit" id="botaoPedido">Confirmar Pedido do Cardápio</button>
+
+                <p id="resultado"></p>
+            </form>    
+            
+            <section id="pedidosPadaria">
+                <h2>Calculadora de Itens da Padaria</h2>
+
+                <div class="item">
+                    <p><strong>Pão Francês</strong> <span class="preco">R$1,00 cada</span></p>
+                    <label>Quantidade:
+                        <input type="number" id="qtdPao" value="0" min="0">
+                    </label>
+                    <button type="button" onclick="calcularItem('Pao', 1.00, 'qtdPao', 'resPao')">Calcular</button>
+                    <p class="resultado" id="resPao"></p>
+                </div>
+                
+                <div class="item">
+                    <p><strong>Bolo</strong> <span class="preco">R$15,00 cada</span></p>
+                    <label>Quantidade:
+                        <input type="number" id="qtdBolo" value="0" min="0">
+                    </label>
+                    <button type="button" onclick="calcularItem('Bolo', 15.00, 'qtdBolo', 'resBolo')">Calcular</button>
+                    <p class="resultado" id="resBolo"></p>
+                </div>
+                
+                <div class="item">
+                    <p><strong>Hamburguer</strong> <span class="preco">R$17,00 cada</span></p>
+                    <label>Quantidade:
+                        <input type="number" id="qtdHumb" value="0" min="0">
+                    </label>
+                    <button type="button"  onclick="calcularItem('Humb', 17.00, 'qtdHumb', 'resHumb')">Calcular</button>
+                    <p class="resultado" id="resHumb"></p>
+                </div>
+                
+                <div class="item">
+                    <p><strong>Torta</strong> <span class="preco">R$20,00 cada</span></p>
+                    <label>Quantidade:
+                        <input type="number" id="qtdTorta" value="0" min="0">
+                    </label>
+                    <button type="button" onclick="calcularItem('Torta', 20.00, 'qtdTorta', 'resTorta')">Calcular</button>
+                    <p class="resultado" id="resTorta"></p>
+                </div>
+            </section>
+
+
+
+            <button type="button" id="btnTop">Voltar ao Topo</button>
+        </div>
+            
+
+        
+
+
+        
+
+
+
+
+
+
+        <script src="pedido.js"></script>
+    </body>
+</html>
+
+
+

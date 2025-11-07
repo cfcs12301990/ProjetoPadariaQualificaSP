@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/png" href="images/logoPadaria.svg">
+    <link rel="stylesheet" href="contato.css">
+    <title>Contato</title>
+</head>
+<body>
+
+    <header class="cabecalho2">
+        <img src="images/logoPadaria.svg" alt="Logo Padaria Bom Sabor" class="logo" />
+        <nav class="menuNavegacao2">
+            <a href="index.html"><i>PÁGINA INICIAL</i></a>
+            <a href="cadastro.html"><i>CADASTRO</i></a>
+            <a href="feedback.html"><i>FEEDBACK</i></a>
+            <a href="pedido.html"><i>PEDIDO</i></a>
+        </nav>
+    </header>
+    
+    <br><br>
+    <fieldset>
+        <h2>Nos deixe seu contato</h2>
+        <form id="formContato">
+            <label for="nome"><strong><i>Nome:</i></strong></label><br>
+            <input type="text" name="nome" id="nome" placeholder="Deixe seu nome aqui..." required>
+            <br><br>
+
+            <label for="email">E-mail: </label><br>
+            <input type="email" name="email" id="email" placeholder="Deixe seu e-mail de contato...">
+            <br><br>
+
+            <label for="numero">Tel:</label><br>
+            <input type="tel" name="telefone" id="numero" minlength="10" maxlength="11">
+            <br><br>
+
+            <label for="assunto">Assunto do contato:</label><br>
+            <select name="assunto" id="assunto" required>
+                <option value="">Escolha um assunto</option>
+                <option value="Trabalhe conosco">Trabalhe conosco</option>
+                <option value="Parceirias">Parceirias</option>
+                <option value="Outros">Outros</option>
+            </select>
+            <br><br>
+
+            <label for="mensagemAqui">Mensagem:</label><br>
+            <textarea name="mensagemAqui" id="mensagemAqui" placeholder="Deixe sua mensagem aqui..." required></textarea>
+            <br><br>
+
+            <button type="submit" class="botao">Enviar via WhatsApp</button>
+        </form>
+    </fieldset>
+
+    <script src="contato.js"></script>
+</body>
+</html>

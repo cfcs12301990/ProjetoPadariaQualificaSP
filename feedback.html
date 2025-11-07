@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="feedback.css">
+        <title>Feedback</title>
+        <meta charset="UTF-8">
+        <link rel="icon" type="image/png" href="images/logoPadaria.svg">
+     
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Document</title>
+    </head>
+
+    <body>
+        
+    
+        <header class="cabecalho1">
+            <img src="images/logoPadaria.svg" alt="Logo Padaria Bom Sabor" class="logo" />
+            <nav class="menuNavegacao1">
+                <a href="index.html"><i>PÁGINA INICIAL</i></a>
+                <a href="cadastro.html"><i>CADASTRO</i></a>
+                <a href="contato.html"><i>CONTATO</i></a>
+                <a href="pedido.html"><i>PEDIDO</i></a>
+            </nav>
+        </header>
+
+
+        <fieldset>
+            <h2><i>Feedback</i></h2>
+            <form>
+                <label for="nome"><strong><i>Nome:</label><br>
+                <input type="text" name="nome" id="nome1" placeholder="Deixe seu nome aqui..." required>
+                <br><br>
+                <label for="email">E-mail: </label><br>
+                <input type="email" name="email" id="email1" placeholder="Deixe seu e-mail de contato...">
+                <br><br>
+                <label for="assunto">Qual tipo de feedback:</label><br>
+                <select name="assunto" id="assunto1">
+                    <option value="">Escolha o feedback</option>
+                    <option value="elogio">Elogio</option>
+                    <option value="reclamacoes">Reclamações</option>
+                    <option value="sugestoes">Sugestões</option>
+                </select>
+                <br><br>
+                <label for="mensagem">Mensagem:</label><br>
+                <textarea name="mensagemAqui" id="mensagemAqui" placeholder="Deixe sua mensagem aqui..."></textarea>
+            </form>
+
+            <button id="btnFeedbackEnvio" type="submit">Encaminhar Feedback</button>
+
+        </fieldset>
+
+        <script src="feedback.js"></script>
+    </body>
+    
+</html>

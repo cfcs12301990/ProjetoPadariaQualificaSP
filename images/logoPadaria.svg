@@ -1,0 +1,36 @@
+<svg width="300" height="80" viewBox="0 0 300 80" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Logo Padaria Bom Sabor">
+  <!-- Ramo de trigo esquerda -->
+  <g fill="none" stroke="#C98B2B" stroke-width="2" transform="translate(20,10)">
+    <line x1="15" y1="60" x2="15" y2="0"></line>
+    <path d="M15 10 l10 -10"></path>
+    <path d="M15 20 l10 -10"></path>
+    <path d="M15 30 l10 -10"></path>
+    <path d="M15 40 l10 -10"></path>
+    <path d="M15 50 l10 -10"></path>
+    <path d="M15 10 l-10 -10"></path>
+    <path d="M15 20 l-10 -10"></path>
+    <path d="M15 30 l-10 -10"></path>
+    <path d="M15 40 l-10 -10"></path>
+    <path d="M15 50 l-10 -10"></path>
+  </g>
+
+  <!-- Texto central -->
+  <text x="150" y="50" font-family="Georgia, serif" font-size="32" fill="#8B5E00" font-weight="bold" text-anchor="middle" dominant-baseline="middle" style="font-style: italic;">
+    Bom Sabor
+  </text>
+
+  <!-- Ramo de trigo direita -->
+  <g fill="none" stroke="#C98B2B" stroke-width="2" transform="translate(260,10) scale(-1,1)">
+    <line x1="15" y1="60" x2="15" y2="0"></line>
+    <path d="M15 10 l10 -10"></path>
+    <path d="M15 20 l10 -10"></path>
+    <path d="M15 30 l10 -10"></path>
+    <path d="M15 40 l10 -10"></path>
+    <path d="M15 50 l10 -10"></path>
+    <path d="M15 10 l-10 -10"></path>
+    <path d="M15 20 l-10 -10"></path>
+    <path d="M15 30 l-10 -10"></path>
+    <path d="M15 40 l-10 -10"></path>
+    <path d="M15 50 l-10 -10"></path>
+  </g>
+</svg>

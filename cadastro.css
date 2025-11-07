@@ -1,0 +1,161 @@
+.cabecalho3 {
+    position: fixed;
+    display: flex;
+    justify-content: space-between; 
+    align-items: center;            
+    width: 96%;
+    top: 10px;
+    left: 1%;
+    background-color: #f8f8ff;      
+    border-top: 1px solid #786600;
+    border-bottom: 2px solid #786600;
+    border-radius: 10px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    z-index: 100;
+    padding: 15px 30px; 
+    box-shadow: 0 3px 8px rgba(0,0,0,0.1);
+}
+.logo {
+    left: 10px;
+}
+
+.menuNavegacao3 a {
+    text-decoration: none;
+    color: #4b3b0a; 
+    font-weight: bold;
+    margin: 0 15px;
+    font-size: 18px;
+}
+
+.menuNavegacao3 a:hover {
+    color: #8b4513; 
+    text-decoration: none;
+}
+
+
+body {
+  background: linear-gradient(180deg, #F0E68C 0%, #8B5E00 100%);
+  min-height: 100vh;
+  margin: 0;
+  color: #3f3c1d; 
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  position: relative;
+  text-align: center;
+}
+
+fieldset {
+    border: 2px solid #4b3b0a;
+    border-radius: 10px;
+    padding: 20px;
+    margin: 25px auto;
+    width: 70%;
+    background-color: rgba(255, 255, 255, 0.7);
+}
+
+label {
+    font-size: 18px;
+}
+
+input, select, textarea {
+    width: 80%;
+    padding: 6px;
+    margin-top: 4px;
+    border-radius: 6px;
+    border: 1px solid #786600;
+    font-size: 16px;
+    outline: none;
+}
+
+input:focus, textarea:focus, select:focus {
+    border-color: #8b4513;
+}
+
+
+.grupo-flex {
+    position: relative; 
+    display: flex;
+    justify-content: center;
+    gap: 25px;
+    margin-top: 16px;
+}
+
+.campo {
+    display: flex;
+    flex-direction: column;
+}
+
+
+#btnCadastroEnvio {
+    margin-top: 20px;
+    padding: 10px 25px;
+    background-color: #4b3b0a;
+    color: white;
+    font-size: 18px;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+}
+
+#btnCadastroEnvio:hover {
+    background-color: #8b4513;
+}
+
+
+@media (max-width: 768px) {
+    fieldset {
+        width: 92%;
+    }
+
+    input, select, textarea {
+        width: 95%;
+    }
+
+    .grupo-flex {
+        flex-direction: column; 
+        gap: 10px;
+    }
+
+    .logo {
+        width: 90px;
+    }
+}
+
+#checkTermo {
+    border: 2px solid #786600;
+    border-radius: 10px;
+    padding: 20px;
+    background-color: rgba(255, 255, 255, 0.7);
+}
+
+
+.grupo-flex {
+    display: flex; 
+    grid-template-columns: 1fr;
+    gap: 15px;
+    justify-items: start;
+}
+
+.item-termo {
+    display: flex;
+    align-items: left;
+    gap: 10px;
+    
+}
+
+.item-termo label {
+    font-size: 18px;
+    color: #4b3b0a;
+    font-weight: bold;
+    cursor: pointer;
+}
+#accept {
+    width: 20px;
+    height: 20px;
+}
+
+#accept1 {
+    width: 20px;
+    height: 20px;
+}
+
+

@@ -1,0 +1,123 @@
+body {
+    background: linear-gradient(180deg, #F0E68C 0%, #8B5E00 100%);
+    font-family: 'Poppins', sans-serif;
+    color: #4b3b0a;
+    margin: 0;
+    min-height: 100vh;
+    display: flex;
+    position: relative;
+    padding: 20px;
+}
+
+.cabecalho1 {
+    position: fixed;
+    display: flex;
+    justify-content: space-between; 
+    align-items: center;            
+    width: 96%;
+    top: 10px;
+    left: 2%;
+    background-color: #f8f8ff;      
+    border-top: 1px solid #786600;
+    border-bottom: 2px solid #786600;
+    border-radius: 10px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    z-index: 100;
+    padding: 15px 30px; 
+    box-shadow: 0 3px 8px rgba(0,0,0,0.1); 
+}
+.logo {
+    left: 10px;
+}
+
+.menuNavegacao1 a {
+    text-decoration: none;
+    color: #4b3b0a; 
+    font-weight: bold;
+    margin: 0 15px;
+    font-size: 18px;
+}
+
+.menuNavegacao1 a:hover {
+    color: #8b4513; 
+    text-decoration: none;
+}
+
+
+fieldset {
+    background-color: #fffaf0;
+    border: 3px solid #c7a900;
+    border-radius: 10px;
+    margin-top: 140px;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 30px;
+    width: 80%;
+    max-width: 600px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+}
+
+h2 {
+    text-align: center;
+    color: #8b4513;
+    font-size: 28px;
+    margin-bottom: 20px;
+}
+
+input, textarea, select {
+    padding: 10px;
+    border: 1px solid #c7a900;
+    border-radius: 5px;
+    font-size: 16px;
+    width: 100%;
+    box-sizing: border-box;
+    margin-top: 5px;
+}
+
+textarea {
+    height: 100px;
+    resize: vertical;
+}
+
+#btnFeedbackEnvio {
+    background-color: #d4a017;
+    border: none;
+    border-radius: 8px;
+    color: white;
+    font-weight: bold;
+    cursor: pointer;
+    margin-top: 15px;
+    padding: 12px;
+    width: 100%;
+    font-size: 16px;
+    transition: background-color 0.3s ease, transform 0.2s;
+}
+
+#btnFeedbackEnvio:hover {
+    background-color: #b88a14;
+    transform: scale(1.03);
+}
+
+label {
+    font-weight: bold;
+    margin-top: 10px;
+    display: block;
+}
+
+@media (max-width: 600px) {
+    .cabecalho1 {
+        flex-direction: column;
+        text-align: center;
+        padding: 10px 20px;
+    }
+
+    .menuNavegacao1 a {
+        display: block;
+        margin: 8px 0;
+    }
+
+    fieldset {
+        width: 90%;
+        padding: 20px;
+    }
+}
